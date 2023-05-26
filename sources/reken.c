@@ -2620,7 +2620,7 @@ newtrick:;
 		to loose the leading word, while in b we have lost the leading word.
 		We could go to DivLong now but we can also add an extra step that
 		is less wasteful.
-		In the case that the new leading word of b is extrememly short (like 1)
+		In the case that the new leading word of b is extremely short (like 1)
 		we make a rather large error of course. In the worst case the whole
 		will be intercepted by DivLong after all, but that is so rare that
 		it shouldn't influence any timing in a measurable way.

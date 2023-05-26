@@ -52,7 +52,7 @@
 /*
   	#[ Variables :
 
-	The sortbot additions are from 17-may-2007 and after. They consitute
+	The sortbot additions are from 17-may-2007 and after. They constitute
 	an attempt to make the final merge sorting faster for the master.
 	This way the master has only one compare per term.
 	It does add some complexity, but the final merge routine (MasterMerge)
@@ -3266,7 +3266,7 @@ restart:;
 		thr = thrtogo;
 /*
 		If the number has changed there is good progress.
-		Maybe there is another thread that needs assistence.
+		Maybe there is another thread that needs assistance.
 		We start all over.
 */
 		if ( thr->totnum-thr->usenum < numtogo ) goto restart;

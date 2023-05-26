@@ -55,8 +55,8 @@ using namespace Grcc;
 
 static OptDef optDef[] = {
  {"Step",       "Generate particle assigned graphs",               GRCC_AGraph, 0},
- {"Outgrf",     "Ouput to file (out.grf)",                               False, 0},
- {"Outgrp",     "Ouput to file (out.grp)",                               False, 0},
+ {"Outgrf",     "Output to file (out.grf)",                               False, 0},
+ {"Outgrp",     "Output to file (out.grp)",                               False, 0},
  {"1PI",        "Only 1PI graphs",                                       True , 0},
  {"NoSelfLoop", "Exclude graphs with loops consist of 1 edge",           True , 0},
  {"NoTadpole",  "Exclude graphs with tadpoles (2 edge connected)",       True , 0},
@@ -162,7 +162,7 @@ void Options::setDefaultValue(void)
 {
     int j;
 
-    // defualt values
+    // default values
     for (j = 0; j < GRCC_OPT_Size; j++) {
         values[j] = optDef[j].defaultv;
     }
@@ -4241,7 +4241,7 @@ void MGraph::bisearchME(int nd, int pd, int ned, MCOpi *mopi, MCBlock *mblk, int
     //  Search biconnected component
     //    visit : pd --> nd --> td
     //    ned : the number of edges between pd and nd.
-    //  Ouput
+    //  Output
     //
     //                 |
     //                 x----+

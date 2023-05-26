@@ -125,7 +125,7 @@
 	3 writeBufToExtChannel
 	4 getcFromExtChannel
 
-	are NOT functions, but variables (pointers) of a corrsponding type.
+	are NOT functions, but variables (pointers) of a corresponding type.
 	They are initialised by proper values to avoid repeated error checking.
 
 	All public functions are independent of realization hidden in this module.
@@ -625,7 +625,7 @@ static  FORM_INLINE char *addStr(char *to, char *from)
 
 
 /*Try to write (atomically) short buffer (of length count) to fd.
-  timeout is a timeout in millisecs. Returns number of writen bytes or -1:*/
+  timeout is a timeout in millisecs. Returns number of written bytes or -1:*/
 static FORM_INLINE ssize_t writeSome(int fd, char *buf, size_t count, int timeout)
 {
 	ssize_t res = 0;
@@ -674,7 +674,7 @@ static FORM_INLINE ssize_t writeSome(int fd, char *buf, size_t count, int timeou
 
 /*Try to read short buffer (of length not more than count)
   from fd. timeout is a timeout in millisecs. Returns number 
-  of writen bytes or -1: */
+  of written bytes or -1: */
 static FORM_INLINE ssize_t readSome(int fd, char *buf, size_t count, int timeout)
 {
 	ssize_t res = 0;
@@ -1223,7 +1223,7 @@ static FORM_INLINE void *createExternalChannel(
 	int gpid = 0;
 	ECINFOSTRUCT *psetInfo;
 #ifdef WITHMPI
-	char statusbuf[2]={'\0','\0'};/*'\0' if run_cmd retuns ok, '!' othervise.*/
+	char statusbuf[2]={'\0','\0'};/*'\0' if run_cmd returns ok, '!' othervise.*/
 #endif
 	extHandlerInit(h);
 

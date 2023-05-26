@@ -2136,7 +2136,7 @@ int ApplyExec(WORD *term, int maxtogo, WORD level)
 		}
 /*
 		If there are more arguments we have to do some
-		pattern matching. This should be easy. We addapted the
+		pattern matching. This should be easy. We adapted the
 		pattern, so that the array indices match already.
 */
 #ifdef WITHPTHREADS

@@ -600,7 +600,7 @@ newterms:
 			PF_IRecvRbuf(rbuf,a,src);
 		}
 /*
-			now savely make next buffer active
+			now safely make next buffer active
 */
 		a = rbuf->active = next;
 	}
